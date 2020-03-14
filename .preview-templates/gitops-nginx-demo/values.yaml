@@ -1,0 +1,7 @@
+# Example Helm values.yaml
+image:
+  registry: repo.example.tld
+  repository: example/repo
+  tag: v0.44.0
+route:
+  host: example-previewplaceholder.apps.origin.baloise.dev
