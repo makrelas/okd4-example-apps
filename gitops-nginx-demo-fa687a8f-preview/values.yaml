@@ -6,3 +6,7 @@ generic:
   ingress:
     enabled: true
     host: gitops-nginx-demo-previewplaceholder.apps.origin.baloise.dev
+image:
+  tag:
+route:
+  host: gitops-nginx-demo-fa687a8f.apps.origin.baloise.dev
