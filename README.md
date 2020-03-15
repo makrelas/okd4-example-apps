@@ -1,5 +1,7 @@
 # OKD4 Example Apps - Deployment Configuration
 
+[![App Status](https://argocd.apps.origin.baloise.dev/api/badge?name=okd4-example-apps-apps)](https://argocd.apps.origin.baloise.dev/applications/okd4-example-apps-apps)
+
 ## Setup
 In order to work, this repository needs to be referenced in the corresponding team's root configuration yaml in the [okd34-apps-root-config](https://github.com/baloise-incubator/okd4-apps-root-config) repository.
 See the [respository property in the configuration](https://github.com/baloise-incubator/okd4-apps-root-config/blob/master/apps/okd4-example-apps.yaml#L1).
