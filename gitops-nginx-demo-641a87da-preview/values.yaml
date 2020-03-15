@@ -2,7 +2,7 @@
 generic:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: 87c503ac592e1fcb8717dc61aab2c099a1ee0f99
+    tag: 5e88469703a3003f197bc5f16ea2bc2e96969732
   ingress:
     enabled: true
     host: gitops-nginx-demo-641a87da.apps.origin.baloise.dev
