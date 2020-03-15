@@ -1,0 +1,8 @@
+# Example Helm values.yaml
+generic:
+  image:
+    repository: registry.baloise.dev/example/gitops-nginx-demo
+    tag: b319cc72318d2ca29ba3ea775381be884b9771b8
+  ingress:
+    enabled: true
+    host: gitops-nginx-demo-1065dd56.apps.origin.baloise.dev
