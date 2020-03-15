@@ -1,7 +1,8 @@
 # Example Helm values.yaml
-image:
-  registry: repo.example.tld
-  repository: example/repo
-  tag: v0.44.0
-route:
-  host: example-previewplaceholder.apps.origin.baloise.dev
+generic:
+  image:
+    repository: registry.baloise.dev/example/gitops-nginx-demo
+    tag: 0.1.0
+  ingress:
+    enabled: true
+    host: gitops-nginx-demo-previewplaceholder.apps.origin.baloise.dev
