@@ -14,7 +14,7 @@ Every root directoy in this repository needs to be listed as application under t
 
 This is done automatically, whenever you add or remove a directory in the root of this repository. 
 You can find the corresponding tekton pipeline configuration for that synchronisation [here](hhttps://github.com/baloise-incubator/okd4-cluster-infra-apps/blob/master/tekton-chatopshandler/syncapps-pipeline.yaml).
-Under the hood, the Job uses the [GitOps CLI](https://github.com/baloise-incubator/gitopscli) to perform a checkout of the `okd4-apps-root-config` and adjusts the applications property accordingly to the list of root directories in this repository.
+Under the hood, the Job uses the [GitOps CLI](https://baloise.github.io/gitopscli/) to perform a checkout of the `okd4-apps-root-config` and adjusts the applications property accordingly to the list of root directories in this repository.
 
 Keep in mind: Only `master` branch is considered for all of those interactions. 
 The content of each directory either contains just Resource Definitions as plain yaml, a [helm chart](https://helm.sh/) or a [kustomize yaml configuration](https://github.com/kubernetes-sigs/kustomize).
