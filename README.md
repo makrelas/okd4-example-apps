@@ -1,6 +1,6 @@
 # OKD4 Example Apps - Deployment Configuration
 
-[![App Status](https://argocd.apps.origin.baloise.dev/api/badge?name=okd4-example-apps-apps)](https://argocd.apps.origin.baloise.dev/applications/okd4-example-apps-apps)
+[![App Status](https://argocd.baloise.dev/api/badge?name=okd4-example-apps-apps)](https://argocd.apps.okd.baloise.dev/applications/okd4-example-apps-apps)
 
 ## Setup
 In order to work, this repository needs to be referenced in the corresponding team's root configuration yaml in the [okd34-apps-root-config](https://github.com/baloise-incubator/okd4-apps-root-config) repository.
@@ -22,4 +22,4 @@ If you use Helm or Kustomize, the template engine is identified automatically.
 
 ## Continuous Delivery
 [ArgoCD](https://argoproj.github.io/argo-cd/) is used to manage the deployments and sync any changes, based on a webhook in this repository, into the cluster.
-You can access the WebUI for baloise incubator [here](https://argocd.apps.origin.baloise.dev/).
+You can access the WebUI for baloise incubator [here](https://argocd.baloise.dev/).

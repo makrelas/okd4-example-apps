@@ -4,4 +4,4 @@ generic:
     tag: 0.3.0
   ingress:
     enabled: true
-    host: gitops-nginx-demo-test.apps.origin.baloise.dev
+    host: gitops-nginx-demo-test.apps.okd.baloise.dev
