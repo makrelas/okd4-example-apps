@@ -2,7 +2,7 @@ generic:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
     tag: 77936c99de91205f8690e5cba1b041855069758e
-  replicaCount: 1
+  replicaCount: 12
   ingress:
     enabled: true
     host: gitops-nginx-demo-test.apps.okd.baloise.dev
