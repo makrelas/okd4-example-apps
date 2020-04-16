@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: hardwired-artifact-
+  generateName: pizza-orders-
 spec:
-  entrypoint: hardwired-artifact
+  entrypoint: pizza-orders
   templates:
-    - name: hardwired-artifact
+    - name: pizza-orders
       inputs:
         artifacts:
           - name: example-apps
@@ -16,4 +16,4 @@ spec:
       container:
         image: debian
         command: [sh, -c]
-        args: ["ls -l /piza-orders/"]
+        args: ["cat /example-apps/.argo-workflows-example/pizza-orders.txt"]
