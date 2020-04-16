@@ -1,16 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Workflow                  # new type of k8s spec
+kind: Workflow
 metadata:
-  generateName: hello-world-    # name of the workflow spec
+  generateName: hardwired-artifact-
 spec:
-  entrypoint: whalesay          # invoke the whalesay template
+  entrypoint: hardwired-artifact
   templates:
-    - name: whalesay              # name of the template
+    - name: hardwired-artifact
+      inputs:
+        artifacts:
+          - name: example-apps
+            path: /example-apps
+            git:
+              repo: https://github.com/baloise-incubator/okd4-example-apps.git
+              revision: "master"
       container:
-        image: docker/whalesay
-        command: [cowsay]
-        args: ["hello world"]
-        resources:                # limit the resources
-          limits:
-            memory: 32Mi
-            cpu: 100m
+        image: debian
+        command: [sh, -c]
+        args: ["ls -l /piza-orders/"]
