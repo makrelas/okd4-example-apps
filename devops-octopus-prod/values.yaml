@@ -4,7 +4,7 @@ devops-octopus:
     tag: v0.1.0
   ingress:
     enabled: true
-    host: devops-octopus-prod.apps.okd.baloise.dev
+    host: octopus.baloise.dev
     path: /api
 devops-butterfly:
   image:
@@ -12,4 +12,4 @@ devops-butterfly:
     tag: v0.1.0
   ingress:
     enabled: true
-    host: devops-octopus-prod.apps.okd.baloise.dev
+    host: octopus.baloise.dev
