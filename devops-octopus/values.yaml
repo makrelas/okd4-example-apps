@@ -1,6 +1,6 @@
 devops-octopus:
   image:
-    repository: baloise-incubator/devops-octopus
+    repository: baloiseincubator/devops-octopus
     tag: v0.1.0
   ingress:
     enabled: true
