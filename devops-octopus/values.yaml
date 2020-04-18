@@ -5,3 +5,4 @@ devops-octopus:
   ingress:
     enabled: true
     host: devops-octopus.apps.okd.baloise.dev
+    path: /api

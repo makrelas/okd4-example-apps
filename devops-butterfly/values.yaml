@@ -4,4 +4,4 @@ devops-butterfly:
     tag: v0.1.0
   ingress:
     enabled: true
-    host: devops-butterfly.apps.okd.baloise.dev
+    host: devops-octopus.apps.okd.baloise.dev
