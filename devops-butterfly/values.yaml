@@ -1,4 +1,4 @@
-devops-octopus:
+devops-butterfly:
   image:
     repository: baloiseincubator/devops-butterfly
     tag: v0.1.0
