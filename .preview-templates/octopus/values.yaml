@@ -1,0 +1,15 @@
+devops-octopus:
+  image:
+    repository: baloiseincubator/devops-octopus
+    tag: v0.2.0
+  ingress:
+    enabled: true
+    host: octopus-previewplaceholder.baloise.dev
+    path: /api
+devops-butterfly:
+  image:
+    repository: baloiseincubator/devops-butterfly
+    tag: v0.2.0
+  ingress:
+    enabled: true
+    host: octopus-previewplaceholder.baloise.dev
