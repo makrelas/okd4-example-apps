@@ -1,4 +1,4 @@
-menu-service:
+spring-keycloak-demo:
   replicaCount: 1
   image:
     repository: registry.baloise.dev/example/spring-keycloak-demo
