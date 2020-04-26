@@ -1,0 +1,17 @@
+menu-service:
+  replicaCount: 1
+  image:
+    repository: registry.baloise.dev/example/spring-keycloak-demo
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: keycloak-demo.apps.baloise.dev
+  env:
+    - name: KEYCLOAK_AUTH_URL
+      value: https://keycloak.apps.baloise.dev/auth
+    - name: KEYCLOAK_REALM
+      value: incubator
+    - name: KEYCLOAK_CLIENT
+      value: demo-client
