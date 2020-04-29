@@ -4,12 +4,12 @@ devops-octopus:
     tag: latest
   ingress:
     enabled: true
-    host: octopus-previewplaceholder.apps.okd.baloise.dev
+    host: octopus-83103e1d.apps.okd.baloise.dev
     path: /api
 devops-butterfly:
   image:
     repository: baloiseincubator/devops-butterfly
-    tag: latest
+    tag: 25720f4cd4061da82d26835b0bd2a6e6d6cd3020
   ingress:
     enabled: true
-    host: octopus-previewplaceholder.apps.okd.baloise.dev
+    host: octopus-83103e1d.apps.okd.baloise.dev
