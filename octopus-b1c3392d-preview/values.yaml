@@ -9,7 +9,7 @@ devops-octopus:
 devops-butterfly:
   image:
     repository: baloiseincubator/devops-butterfly
-    tag: latest
+    tag: 25f1d0b7668ce8883ce93d26debb0bf3f84f4e3a
   ingress:
     enabled: true
     host: octopus-b1c3392d.apps.okd.baloise.dev
