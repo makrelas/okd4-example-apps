@@ -1,1 +1,6 @@
 name: gitops-nginx-demo-test
+dependencies:
+  - name: generic-chart
+    version: 2.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: gitops-demo

@@ -1,7 +1,7 @@
-generic:
+gitops-demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: 77936c99de91205f8690e5cba1b041855069758e
+    tag: latest
   replicaCount: 5
   ingress:
     enabled: true
