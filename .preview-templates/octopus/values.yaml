@@ -2,14 +2,19 @@ devops-octopus:
   image:
     repository: baloiseincubator/devops-octopus
     tag: latest
-  ingress:
-    enabled: true
-    host: octopus-previewplaceholder.apps.okd.baloise.dev
-    path: /api
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: octopus-preview.apps.baloise.dev
+        path: /api
 devops-butterfly:
   image:
     repository: baloiseincubator/devops-butterfly
     tag: latest
-  ingress:
-    enabled: true
-    host: octopus-previewplaceholder.apps.okd.baloise.dev
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: octopus-preview.apps.baloise.dev
+        path: /
