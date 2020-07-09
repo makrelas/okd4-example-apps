@@ -1,16 +1,20 @@
 devops-octopus:
-  replicas: 0
   image:
     repository: baloiseincubator/devops-octopus
     tag: v0.2.0
-  ingress:
-    enabled: true
-    host: octopus.baloise.dev
-    path: /api
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: octopus.apps.baloise.dev
+        path: /api
 devops-butterfly:
   image:
     repository: baloiseincubator/devops-butterfly
     tag: fa082a0b1f757f4734ae370249b395baeef444e3
-  ingress:
-    enabled: true
-    host: octopus.baloise.dev
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: octopus.apps.baloise.dev
+        path: /
