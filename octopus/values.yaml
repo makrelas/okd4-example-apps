@@ -1,4 +1,5 @@
 devops-octopus:
+  replicas: 0
   image:
     repository: baloiseincubator/devops-octopus
     tag: v0.2.0
