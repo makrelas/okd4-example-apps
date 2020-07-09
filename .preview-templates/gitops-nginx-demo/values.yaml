@@ -1,9 +1,10 @@
-# Example Helm values.yaml
-generic:
+gitops-demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: 0.1.0
+    tag: latest
   replicaCount: 1
-  ingress:
-    enabled: true
-    host: gitops-nginx-demo-previewplaceholder.apps.okd.baloise.dev
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: gitops-nginx-demo-previewplaceholder.apps.okd.baloise.dev
