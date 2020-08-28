@@ -4,7 +4,9 @@ gitops-demo:
     tag: latest
   replicaCount: 1
   network:
-    http:
-      servicePort: 8080
+    https:
+      servicePort: 8443
       ingress:
         host: demo-test.apps.baloise.dev
+  tlsSidecar:
+    enabled: true
