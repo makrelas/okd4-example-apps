@@ -7,6 +7,6 @@ gitops-demo:
     https:
       servicePort: 8443
       ingress:
-        host: https://gitops-nginx-demo-test.apps.okd.baloise.dev/
+        host: gitops-nginx-demo-test.apps.okd.baloise.dev
   tlsSidecar:
     enabled: true
