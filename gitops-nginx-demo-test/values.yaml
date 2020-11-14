@@ -1,7 +1,7 @@
 gitops-demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: latest
+    tag: 01
   replicaCount: 0
   network:
     https:
