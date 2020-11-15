@@ -5,6 +5,6 @@ gitops-demo:
   replicaCount: 1
   network:
     https:
-      servicePort: 8443
+      servicePort: 8080
       ingress:
         host: gitops-nginx-demo-test.apps.okd.baloise.dev
