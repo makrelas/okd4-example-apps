@@ -1,8 +1,8 @@
 gitops-demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: thisispreviewspecific
+    tag: PREVIEW_SPECIFIC_VALUE
   network:
     http:
       ingress:
-        host: thisispreviewspecific
+        host: PREVIEW_SPECIFIC_VALUE
