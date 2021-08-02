@@ -2,6 +2,7 @@ gitops-demo:
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
     tag: 3b70e3f90b4fe19cf528d88d378551a97ba24b1e
+  replicaCount: 2
   network:
     http:
       ingress:
