@@ -1,8 +1,0 @@
-gitops-demo:
-  image:
-    repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: "dbd51de31cd6e5daaafd2b45eb45eb04832c6080"
-  network:
-    http:
-      ingress:
-        host: "gitops-nginx-demo-v2-beta-preview-id-hash-short-d6e-preview.apps.baloise.dev"
