@@ -5,4 +5,4 @@ baloise-design-system-docs:
   network:
     http:
       ingress:
-        host: design-system-docs-test.apps.baloise.dev
+        host: design.baloise.dev
