@@ -1,7 +1,7 @@
 baloise-design-system-docs:
   image:
     repository: registry.baloise.dev/baloise-design-system/docs
-    tag: c1ace1e2bd45affd0df25bacc790d5cbe1139738
+    tag: d795ea2595847a99e261acc792f614e6bee76fa3
   network:
     http:
       ingress:
