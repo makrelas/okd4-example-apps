@@ -1,0 +1,8 @@
+gitops-demo:
+  image:
+    repository: registry.baloise.dev/baloise-design-system/docs
+    tag: c1ace1e2bd45affd0df25bacc790d5cbe1139738
+  network:
+    http:
+      ingress:
+        host: design-system-docs-test.apps.baloise.dev
