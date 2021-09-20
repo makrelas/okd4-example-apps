@@ -1,0 +1,8 @@
+baloise-design-system-docs:
+  image:
+    repository: registry.baloise.dev/baloise-design-system/docs
+    tag: PREVIEW_SPECIFIC_VALUE
+  network:
+    http:
+      ingress:
+        host: PREVIEW_SPECIFIC_VALUE
