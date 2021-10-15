@@ -19,7 +19,7 @@ spec:
             defaultMode: 420
       containers:
         - name: nginx
-          image: bitnami/nginx:1.21.3-debian-10-r36
+          image: nginx:alpine
           ports:
             - containerPort: 8080
               protocol: TCP
