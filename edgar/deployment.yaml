@@ -1,0 +1,39 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: edgar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edgar
+  template:
+    metadata:
+      labels:
+        app: edgar
+    spec:
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: nginx-config
+            defaultMode: 420
+      containers:
+        - name: nginx
+          image: bitnami/nginx:1.21.3-debian-10-r36
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+              name: http
+          env:
+            - name: NGINX_ENTRYPOINT_QUIET_LOGS
+              value: "true"
+          resources:
+            limits:
+              cpu: 200m
+              memory: 128Mi
+            requests:
+              memory: 64Mi
+              cpu: 25m
+          volumeMounts:
+            - name: nginx-config
+              mountPath: /etc/nginx/conf.d/
