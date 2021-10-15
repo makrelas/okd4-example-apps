@@ -19,7 +19,7 @@ spec:
             defaultMode: 420
       containers:
         - name: nginx
-          image: nginx:alpine
+          image: niiku/nginx:1.19-alpine
           ports:
             - containerPort: 8080
               protocol: TCP
