@@ -434,7 +434,7 @@ scheduling:
     nodeSelector: {}
     tolerations: []
     pdb:
-      enabled: true
+      enabled: false
       maxUnavailable: 1
       minAvailable:
     resources: {}
