@@ -40,7 +40,7 @@ hub:
   baseUrl: /
   cookieSecret:
   initContainers: []
-  fsGid: 1000
+  fsGid: 1001600000
   nodeSelector: {}
   tolerations: []
   concurrentSpawnLimit: 64
@@ -349,8 +349,8 @@ singleuser:
   lifecycleHooks: {}
   initContainers: []
   extraContainers: []
-  uid: 1000
-  fsGid: 100
+  uid: 1001600000
+  fsGid: 1001600000
   serviceAccountName:
   storage:
     type: dynamic
