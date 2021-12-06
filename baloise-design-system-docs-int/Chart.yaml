@@ -1,6 +1,6 @@
 apiVersion: v2
 version: 1.0.0
-name: baloise-design-system-docs-dev
+name: baloise-design-system-docs-int
 dependencies:
   - name: generic-chart
     version: 2.0.0
