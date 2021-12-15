@@ -1,7 +1,7 @@
 baloise-design-system-docs:
   image:
     repository: baloise/design-system-docs
-    tag: fcdda19
+    tag: 0c1bb6d
   network:
     http:
       ingress:
