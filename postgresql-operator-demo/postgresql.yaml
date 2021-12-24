@@ -1,0 +1,28 @@
+apiVersion: acid.zalan.do/v1
+kind: postgresql
+metadata:
+  labels:
+    team: incubator
+  name: postgresql-demo
+spec:
+  enableMasterLoadBalancer: true
+  resources:
+    limits:
+      cpu: 500m
+      memory: 500Mi
+    requests:
+      cpu: 100m
+      memory: 100Mi
+  users:
+    demo: []
+  enableConnectionPooler: true
+  enableReplicaLoadBalancer: true
+  postgresql:
+    version: '14'
+  teamId: acid
+  databases:
+    demo: demo
+  allowedSourceRanges: null
+  volume:
+    size: 10Gi
+  numberOfInstances: 3
