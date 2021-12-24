@@ -3,6 +3,7 @@ kind: AppDeployment
 metadata:
   name: app-deployment-example
 spec:
+  replicaCount: 2
   image:
     repository: registry.baloise.dev/example/gitops-nginx-demo
     tag: 566986bc53592942bb09d33763bbc471ccbe817d
