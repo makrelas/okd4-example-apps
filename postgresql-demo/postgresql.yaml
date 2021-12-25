@@ -1,9 +1,7 @@
 apiVersion: acid.zalan.do/v1
 kind: postgresql
 metadata:
-  labels:
-    team: incubator
-  name: incubator-postgresql-demo
+  name: incubator-demo
 spec:
   enableMasterLoadBalancer: true
   resources:
