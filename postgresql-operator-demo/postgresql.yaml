@@ -3,7 +3,7 @@ kind: postgresql
 metadata:
   labels:
     team: incubator
-  name: postgresql-demo
+  name: incubator-postgresql-demo
 spec:
   enableMasterLoadBalancer: true
   resources:
@@ -19,7 +19,7 @@ spec:
   enableReplicaLoadBalancer: true
   postgresql:
     version: '14'
-  teamId: acid
+  teamId: incubator
   databases:
     demo: demo
   allowedSourceRanges: null
