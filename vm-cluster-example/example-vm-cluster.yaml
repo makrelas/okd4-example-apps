@@ -7,3 +7,10 @@ spec:
   instances: 2
   os: linux
   diskSize: 20Gi
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080 # optional - defaults to port
+      protocol: TCP # optional - defaults to TCP
+      ingress:
+        host: example-vm.apps.baloise.dev
