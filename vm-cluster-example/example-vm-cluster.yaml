@@ -13,4 +13,4 @@ spec:
       targetPort: 8080 # optional - defaults to port
       protocol: TCP # optional - defaults to TCP
       ingress:
-        host: example-vm.apps.baloise.dev
+        host: vm-cluster-example.apps.baloise.dev
