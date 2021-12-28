@@ -4,7 +4,7 @@ metadata:
   name: example
 spec:
   flavor: small
-  instances: 2
+  instances: 1
   os: linux
   diskSize: 20Gi
   ports:
