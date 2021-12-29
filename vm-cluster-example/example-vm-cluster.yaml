@@ -5,7 +5,6 @@ metadata:
 spec:
   flavor: small
   instances: 1
-  os: linux
   diskSize: 20Gi
   ports:
     - name: http
@@ -14,3 +13,5 @@ spec:
       protocol: TCP # optional - defaults to TCP
       ingress:
         host: vm-cluster-example.apps.baloise.dev
+  roles:
+    apache: {}
