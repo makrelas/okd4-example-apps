@@ -13,5 +13,5 @@ spec:
       protocol: TCP # optional - defaults to TCP
       ingress:
         host: vm-cluster-example.apps.baloise.dev
-  roles:
-    apache: {}
+  apache:
+    enabled: true
