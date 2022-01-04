@@ -1,7 +1,7 @@
 apiVersion: apps.baloise.dev/v1alpha1
 kind: VirtualMachineCluster
 metadata:
-  name: example-cluster
+  name: example
 spec:
   flavor: small
   instances: 2
