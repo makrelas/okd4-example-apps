@@ -1,10 +1,10 @@
 apiVersion: apps.baloise.dev/v1alpha1
 kind: VirtualMachineCluster
 metadata:
-  name: example
+  name: example-cluster
 spec:
   flavor: small
-  instances: 2
+  instances: 1
   diskSize: 20Gi
   ports:
     - name: http
