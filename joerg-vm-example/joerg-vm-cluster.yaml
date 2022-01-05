@@ -1,0 +1,17 @@
+apiVersion: apps.baloise.dev/v1alpha1
+kind: VirtualMachineCluster
+metadata:
+  name: joerg-example
+spec:
+  flavor: small
+  instances: 1
+  diskSize: 20Gi
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80 # optional - defaults to port
+      protocol: TCP # optional - defaults to TCP
+      ingress:
+        host: vmc-joerg-example.apps.baloise.dev
+  apache:
+    enabled: true
