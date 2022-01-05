@@ -1,17 +1,17 @@
 apiVersion: apps.baloise.dev/v1alpha1
 kind: VirtualMachineCluster
 metadata:
-  name: example
+  name: apache-example
 spec:
   flavor: small
-  instances: 1
+  instances: 0
   diskSize: 20Gi
   ports:
     - name: http
-      port: 8080
-      targetPort: 8080 # optional - defaults to port
+      port: 80
+      targetPort: 80 # optional - defaults to port
       protocol: TCP # optional - defaults to TCP
       ingress:
-        host: vm-cluster-example.apps.baloise.dev
-  jboss:
+        host: vmc-apache-example.apps.baloise.dev
+  apache:
     enabled: true

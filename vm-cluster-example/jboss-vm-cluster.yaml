@@ -1,0 +1,17 @@
+apiVersion: apps.baloise.dev/v1alpha1
+kind: VirtualMachineCluster
+metadata:
+  name: jboss-example
+spec:
+  flavor: small
+  instances: 1
+  diskSize: 20Gi
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080 # optional - defaults to port
+      protocol: TCP # optional - defaults to TCP
+      ingress:
+        host: vmc-jboss-example.apps.baloise.dev
+  jboss:
+    enabled: true
