@@ -4,7 +4,7 @@ metadata:
   name: joerg-example
 spec:
   flavor: small
-  instances: 1
+  instances: 2
   diskSize: 20Gi
   ports:
     - name: http
