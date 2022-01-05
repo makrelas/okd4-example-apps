@@ -8,10 +8,10 @@ spec:
   diskSize: 20Gi
   ports:
     - name: http
-      port: 80
-      targetPort: 80 # optional - defaults to port
+      port: 8080
+      targetPort: 8080 # optional - defaults to port
       protocol: TCP # optional - defaults to TCP
       ingress:
         host: vm-cluster-example.apps.baloise.dev
-  apache:
+  jboss:
     enabled: true
