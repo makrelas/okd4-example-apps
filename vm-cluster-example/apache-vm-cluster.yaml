@@ -4,7 +4,7 @@ metadata:
   name: apache-example
 spec:
   flavor: small
-  instances: 2
+  instances: 1
   diskSize: 20Gi
   ports:
     - name: http
