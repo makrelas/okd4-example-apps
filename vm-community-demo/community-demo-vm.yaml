@@ -1,0 +1,17 @@
+apiVersion: apps.baloise.dev/v1alpha1
+kind: VirtualMachineCluster
+metadata:
+  name: devops-community-example
+spec:
+  flavor: small
+  instances: 1
+  diskSize: 20Gi
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80 # optional - defaults to port
+      protocol: TCP # optional - defaults to TCP
+      ingress:
+        host: devops-community-example.apps.baloise.dev
+  apache:
+    enabled: true
