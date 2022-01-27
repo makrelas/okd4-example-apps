@@ -1,0 +1,17 @@
+apiVersion: apps.baloise.dev/v1alpha1
+kind: VirtualMachineCluster
+metadata:
+  name: demo-cluster
+spec:
+  flavor: small
+  instances: 2
+  diskSize: 50Gi
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP
+      ingress:
+        host: demo-cluster.apps.baloise.dev
+  apache:
+    enabled: true
