@@ -1,7 +1,7 @@
 baloise-design-system-docs:
   image:
     repository: baloise/design-system-docs
-    tag: bd29741
+    tag: 953bcad
   network:
     http:
       ingress:
