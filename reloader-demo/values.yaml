@@ -1,0 +1,16 @@
+reloader-demo:
+  image:
+    repository: registry.baloise.dev/example/gitops-nginx-demo
+    tag: 566986bc53592942bb09d33763bbc471ccbe817d
+  network:
+    http:
+      ingress:
+        host: reloader-demo.apps.baloise.dev
+  volumes:
+    - name: index
+      configMapRef:
+        configMap:
+          name: index
+  volumeMounts:
+    - name: index
+      mountPath: /var/www/html/

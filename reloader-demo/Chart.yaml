@@ -1,0 +1,8 @@
+apiVersion: v2
+version: 1.0.0
+name: gitops-nginx-demo-test
+dependencies:
+  - name: generic-chart
+    version: 3.0.0
+    repository: https://registry.baloise.dev/chartrepo/library
+    alias: reloader-demo
