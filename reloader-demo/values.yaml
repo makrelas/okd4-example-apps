@@ -8,9 +8,8 @@ reloader-demo:
         host: reloader-demo.apps.baloise.dev
   volumes:
     - name: index
-      configMapRef:
-        configMap:
-          name: index
+      configMap:
+        name: index
   volumeMounts:
     - name: index
       mountPath: /var/www/html/
