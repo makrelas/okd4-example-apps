@@ -12,4 +12,4 @@ reloader-demo:
         name: index
   volumeMounts:
     - name: index
-      mountPath: /usr/share/nginx/html/
+      mountPath: /app/
