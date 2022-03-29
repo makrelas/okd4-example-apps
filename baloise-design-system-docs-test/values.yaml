@@ -1,7 +1,7 @@
 baloise-design-system-docs:
   image:
     repository: baloise/design-system-docs
-    tag: a342ecb
+    tag: f7d6e32
   network:
     http:
       ingress:
