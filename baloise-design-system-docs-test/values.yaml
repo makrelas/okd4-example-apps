@@ -1,7 +1,7 @@
 baloise-design-system-docs:
   image:
     repository: baloise/design-system-docs
-    tag: ff2dada
+    tag: 4fee89c
   network:
     http:
       ingress:
