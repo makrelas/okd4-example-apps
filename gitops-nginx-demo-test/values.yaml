@@ -6,5 +6,3 @@ gitops-demo:
     http:
       ingress:
         host: gitops-demo.baloise.dev
-        annotations:
-          external-dns.alpha.kubernetes.io/hostname: gitops-demo.baloise.dev
