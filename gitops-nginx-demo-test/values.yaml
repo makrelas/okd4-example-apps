@@ -5,4 +5,6 @@ gitops-demo:
   network:
     http:
       ingress:
-        host: demo-test.apps.baloise.dev
+        host: gitops-demo.baloise.dev
+        annotations:
+
