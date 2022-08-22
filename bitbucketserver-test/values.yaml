@@ -1,0 +1,39 @@
+bitbucket-chart:
+ replicaCount: 2
+
+ database:
+  url: postgresql-ha-pgpool.bitbucket-test.svc.cluster.local
+  credentials:
+    secretName: bitbucketdbconnect 
+    usernameSecretKey: username
+    passwordSecretKey: password
+ 
+ volumes:
+  localHome:
+    persistentVolumeClaim:
+      create: true
+  sharedHome:
+    persistentVolume:
+      create: false
+    persistentVolumeClaim:
+      create: true
+      storageClassName: cephfs
+    nfsPermissionFixer: 
+      enabled: false  
+     
+ bitbucket:
+  securityContextEnabled: false
+  license:
+    secretName:
+    secretKey: license-key
+  elasticSearch:
+    credentials:
+      secretName:
+      usernameSecretKey: username
+      passwordSecretKey: password
+  additionalEnvironmentVariables: 
+   - name: NO_SEARCH
+     value: "1"
+    
+
+
