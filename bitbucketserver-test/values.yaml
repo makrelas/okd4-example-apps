@@ -23,7 +23,15 @@ bitbucket-chart:
   license:
     secretName:
     secretKey: license-key
+  sysadminCredentials:
+    secretName:
+    usernameSecretKey: username
     passwordSecretKey: password
+    displayNameSecretKey: displayName
+    emailAddressSecretKey: emailAddress
+  displayName:
+  clustering:
+    enabled: true
   elasticSearch:
     credentials:
       secretName:
@@ -58,3 +66,4 @@ postgres-chart:
   metrics:
     podSecurityContext:
       enabled: false
+    
