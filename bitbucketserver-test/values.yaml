@@ -1,5 +1,5 @@
 bitbucket-chart:
- replicaCount: 2
+  replicaCount: 2
 
  database:
   url: postgresql-ha-pgpool.bitbucket-test.svc.cluster.local
@@ -34,6 +34,32 @@ bitbucket-chart:
   additionalEnvironmentVariables: 
    - name: NO_SEARCH
      value: "1"
-    
 
+postgres-chart:    
+  global:
+   postgresql:
+     username: "postgres"
+     password: "password"
+     database: "standard"
+     repmgrUsername: "repmgr"
+     repmgrPassword: "password"
+     repmgrDatabase: "repmgr"
 
+  postgresql:
+   podSecurityContext:
+     enabled: false
+   containerSecurityContext:
+     enabled: false
+   username: postgres
+   password: "password"
+   database: "standard"
+   repmgrPassword: "password"
+
+  pgpool:
+    podSecurityContext:
+      enabled: false
+    containerSecurityContext:
+      enabled: false
+  metrics:
+    podSecurityContext:
+      enabled: false
