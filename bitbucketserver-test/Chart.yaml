@@ -4,9 +4,9 @@ name: bitbucketserver-test
 dependencies:
   - name: bitbucket
     version: 1.4.0
-    repository: https://github.com/atlassian/data-center-helm-charts/tree/main/src/main/charts/
+    repository: https://atlassian.github.io/data-center-helm-charts
     alias: bitbucket-chart
   - name: postgresql-ha
     version: 9.3.5
-    repository: https://github.com/bitnami/charts/tree/master/bitnami
+    repository: https://charts.bitnami.com/bitnami
     alias: postgres-chart
