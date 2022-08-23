@@ -23,6 +23,7 @@ bitbucket-chart:
   license:
     secretName:
     secretKey: license-key
+    passwordSecretKey: password
   elasticSearch:
     credentials:
       secretName:
