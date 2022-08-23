@@ -1,13 +1,11 @@
 bitbucket-chart:
-  replicaCount: 2
-
+ replicaCount: 2
  database:
   url: postgresql-ha-pgpool.bitbucket-test.svc.cluster.local
   credentials:
     secretName: bitbucketdbconnect 
     usernameSecretKey: username
     passwordSecretKey: password
- 
  volumes:
   localHome:
     persistentVolumeClaim:
@@ -19,8 +17,7 @@ bitbucket-chart:
       create: true
       storageClassName: cephfs
     nfsPermissionFixer: 
-      enabled: false  
-     
+      enabled: false   
  bitbucket:
   securityContextEnabled: false
   license:
@@ -34,7 +31,6 @@ bitbucket-chart:
   additionalEnvironmentVariables: 
    - name: NO_SEARCH
      value: "1"
-
 postgres-chart:    
   global:
    postgresql:
@@ -44,7 +40,6 @@ postgres-chart:
      repmgrUsername: "repmgr"
      repmgrPassword: "password"
      repmgrDatabase: "repmgr"
-
   postgresql:
    podSecurityContext:
      enabled: false
@@ -54,7 +49,6 @@ postgres-chart:
    password: "password"
    database: "standard"
    repmgrPassword: "password"
-
   pgpool:
     podSecurityContext:
       enabled: false
