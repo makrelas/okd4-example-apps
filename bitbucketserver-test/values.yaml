@@ -1,4 +1,7 @@
 bitbucket-chart:
+ image:
+  repository: quay.balgroupit.com/devops/bitbucket
+  tag: "8.3"
  replicaCount: 2
  database:
   url: postgresql-ha-pgpool.bitbucket-test.svc.cluster.local
@@ -31,7 +34,7 @@ bitbucket-chart:
     emailAddressSecretKey: emailAddress
   displayName:
   clustering:
-    enabled: true
+    enabled: false
   elasticSearch:
     credentials:
       secretName:
@@ -50,6 +53,9 @@ postgres-chart:
      repmgrPassword: "password"
      repmgrDatabase: "repmgr"
   postgresql:
+   image: 
+    repository: quay.balgroupit.com/devops/bitbucket
+    tag: postgresql-repmgr-14.5.0-debian-11-r3
    podSecurityContext:
      enabled: false
    containerSecurityContext:
@@ -59,6 +65,9 @@ postgres-chart:
    database: "standard"
    repmgrPassword: "password"
   pgpool:
+    image:
+    repository: quay.balgroupit.com/devops/bitbucket
+    tag: pgpool-4.3.2-debian-11-r28
     podSecurityContext:
       enabled: false
     containerSecurityContext:
