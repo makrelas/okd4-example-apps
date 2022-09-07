@@ -5,4 +5,4 @@ app:
   network:
     http:
       ingress:
-        host: gitops-demo.baloise.dev
+        host: testing-test.test.test
