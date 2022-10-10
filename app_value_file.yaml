@@ -1,0 +1,7 @@
+applications:
+  generic:
+    teamcode: teamcode1
+  baloise-design-system-docs-test:
+    teamvalue1: teamvalue221
+  bitbucketserver-test:
+    appvalue2: appvalue2
