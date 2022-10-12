@@ -3,6 +3,6 @@ applications:
     teamcode: asdasfd
   baloise-design-system-docs-test:
     teamvalue1: evennewervalue
-    teamvalue7: newvalue
+    teamvalue7: valuetochangeallvalues
   bitbucketserver-test:
     appvalue2: newvalue
