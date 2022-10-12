@@ -2,7 +2,7 @@ applications:
   generic:
     teamcode: asdasfd
   baloise-design-system-docs-test:
-    teamvalue1: saddsfadsaaa
-    teamvalue7: asddffddfdf
+    teamvalue1: newvalue
+    teamvalue7: newvalue
   bitbucketserver-test:
-    appvalue2: appvalue2
+    appvalue2: newvalue
