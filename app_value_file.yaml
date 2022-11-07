@@ -6,3 +6,5 @@ applications:
     teamvalue7: valuetochangeallvalues
   bitbucketserver-test:
     appvalue2: newvalue
+  gitops-nginx-demo-test:
+    test: test
